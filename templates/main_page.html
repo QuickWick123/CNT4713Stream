@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<div class>
+
+  <h1 style= "color:purple;">Welcome {{name}}!</h1>
+  <p style= "color:purple;">Please select to see a static feed or live feed:</p>
+  <a class="btn btn-primary" href="{{url_for('static_feed')}}" role="button" style= "color:black;background-color:darkblue">Static Feed</a>
+  <br><br>
+  <a class="btn btn-primary" href="{{url_for('live_feed')}}" role="button" style= "color:black;background-color:darkblue">Live Feed</a>
+</div>
+
+{% endblock %}
